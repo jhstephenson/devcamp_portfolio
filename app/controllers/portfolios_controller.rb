@@ -36,6 +36,9 @@ class PortfoliosController < ApplicationController
     end
   end
 
+  def show
+    @portfolio_item = Portfolio.find(params[:id])
+  end
   
   private
     # Use callbacks to share common setup or constraints between actions.
