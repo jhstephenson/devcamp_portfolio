@@ -1,0 +1,7 @@
+<div class="blog-header">
+  <div class="container">
+    <h1 class="blog-title">The Edge of Programming Blog</h1>
+    <p class="lead blog-description">Adventures in Programming</p>
+    <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
+  </div>
+</div>
